@@ -108,6 +108,17 @@ namespace sld {
     typedef struct string_wnvar;
 
     //--------------------------------------------------------------------
+    // STRING HASHING
+    //--------------------------------------------------------------------
+
+    SLD_STRING_API hash32        string_c_hash_32            (const cchar8*  str_buffer, const u32 str_size);
+    SLD_STRING_API hash32        string_w_hash_32            (const wchar16* str_buffer, const u32 str_size);
+    SLD_STRING_API hash64        string_c_hash_64            (const cchar8*  str_buffer, const u32 str_size);
+    SLD_STRING_API hash64        string_w_hash_64            (const wchar16* str_buffer, const u32 str_size);
+    SLD_STRING_API hash128       string_c_hash_128           (const cchar8*  str_buffer, const u32 str_size);    
+    SLD_STRING_API hash128       string_w_hash_128           (const wchar16* str_buffer, const u32 str_size);    
+
+    //--------------------------------------------------------------------
     // C STRING 32
     //--------------------------------------------------------------------
 
