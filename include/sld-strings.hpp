@@ -3,9 +3,6 @@
 
 #include <sld.hpp>
 
-#ifndef SLD_STRINGS_DLL_EXPORT
-#   define SLD_STRINGS_STATIC
-#endif
 
 #ifdef SLD_STRINGS_STATIC 
 #   define SLD_STRINGS_API 
