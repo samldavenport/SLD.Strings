@@ -57,13 +57,13 @@ namespace sld {
             ++i) {
 
             dst_str[i] = src_str[i];
+            ++size_copied;
             if (src_str[i] == 0) {
                 break;
             }
-            ++size_copied;
         }
 
-        dst_str[dst_size - 1] = 0;
+        dst_str[size_copied] = 0;
 
         return(size_copied);
     }
