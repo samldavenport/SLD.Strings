@@ -41,6 +41,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_equals                (const cstr* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_is_null_or_empty      (const cstr* str);
 
+    SLD_STRINGS_API u32  cstr_c8_init               (cstr_c8* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c8_length             (const cstr_c8* str);
     SLD_STRINGS_API u32  cstr_c8_hash               (const cstr_c8* str);
     SLD_STRINGS_API u32  cstr_c8_copy               (const cstr_c8* str_src, cstr* str_dst);
@@ -48,6 +49,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_c8_equals             (const cstr_c8* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_c8_is_null_or_empty   (const cstr_c8* str);
 
+    SLD_STRINGS_API u32  cstr_c16_init              (cstr_c16* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c16_length            (const cstr_c16* str);
     SLD_STRINGS_API u32  cstr_c16_hash              (const cstr_c16* str);
     SLD_STRINGS_API u32  cstr_c16_copy              (const cstr_c16* str_src, cstr* str_dst);
@@ -55,6 +57,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_c16_equals            (const cstr_c16* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_c16_is_null_or_empty  (const cstr_c16* str);
 
+    SLD_STRINGS_API u32  cstr_c32_init              (cstr_c32* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c32_length            (const cstr_c32* str);
     SLD_STRINGS_API u32  cstr_c32_hash              (const cstr_c32* str);
     SLD_STRINGS_API u32  cstr_c32_copy              (const cstr_c32* str_src, cstr* str_dst);
@@ -62,6 +65,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_c32_equals            (const cstr_c32* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_c32_is_null_or_empty  (const cstr_c32* str);
 
+    SLD_STRINGS_API u32  cstr_c64_init              (cstr_c64* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c64_length            (const cstr_c64* str);
     SLD_STRINGS_API u32  cstr_c64_hash              (const cstr_c64* str);
     SLD_STRINGS_API u32  cstr_c64_copy              (const cstr_c64* str_src, cstr* str_dst);
@@ -69,6 +73,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_c64_equals            (const cstr_c64* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_c64_is_null_or_empty  (const cstr_c64* str);
 
+    SLD_STRINGS_API u32  cstr_c128_init             (cstr_c128* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c128_length           (const cstr_c128* str);
     SLD_STRINGS_API u32  cstr_c128_hash             (const cstr_c128* str);
     SLD_STRINGS_API u32  cstr_c128_copy             (const cstr_c128* str_src, cstr* str_dst);
@@ -76,6 +81,7 @@ namespace sld {
     SLD_STRINGS_API bool cstr_c128_equals           (const cstr_c128* str_a,   const cstr* str_b);
     SLD_STRINGS_API bool cstr_c128_is_null_or_empty (const cstr_c128* str);
 
+    SLD_STRINGS_API u32  cstr_c256_init             (cstr_c256* str, const cchar* val);
     SLD_STRINGS_API u32  cstr_c256_length           (const cstr_c256* str);
     SLD_STRINGS_API u32  cstr_c256_hash             (const cstr_c256* str);
     SLD_STRINGS_API u32  cstr_c256_copy             (const cstr_c256* str_src, cstr* str_dst);

@@ -2,6 +2,19 @@
 
 namespace sld {
 
+    SLD_STRINGS_API u32 
+    cstr_c8_init(
+        cstr_c8*    str,
+        const cchar* val) {
+
+        assert(val);
+
+        const u32 length        = cstr_nvar_length (val, 8);
+        const u32 length_copied = cstr_nvar_copy   (val, 8, str->chars, length);
+   
+        return(length_copied);
+    }
+
     SLD_STRINGS_API u32
     cstr_c8_length(
         const cstr_c8* str) {

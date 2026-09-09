@@ -17,7 +17,7 @@ $Command = @(
     "/std:c++17"          # c++17 standard mode
     "/Od"                 # disable optimizations
     "/D_HAS_EXCEPTIONS=0" # disable exceptions for STL and CRT
-    "/DSLD_DLL_EXPORT"
+    "/DSLD_STRINGS_DLL_EXPORT"
 ) -join " "
 
 $CompileCommands  = @()
