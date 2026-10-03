@@ -36,6 +36,10 @@ $Link = @(
     "/DLL"
 ) -join " "
 
+$null = New-Item -Force -ItemType Directory -Path @(Join-Path $ProjectRoot "build\debug\bin")
+$null = New-Item -Force -ItemType Directory -Path @(Join-Path $ProjectRoot "build\debug\obj")
+$null = New-Item -Force -ItemType Directory -Path @(Join-Path $ProjectRoot "build\debug\lib")
+
 & .\SLD.Core\scripts\Build-SLDCoreDebug.ps1
 
 Invoke-Expression $Compile
