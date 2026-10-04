@@ -3,12 +3,8 @@
 
 #include <sld.hpp>
 
-#ifndef SLD_STRINGS_DLL_EXPORT
-#   define SLD_STRINGS_STATIC
-#endif
-
-#ifdef SLD_STRINGS_STATIC 
-#   define SLD_STRINGS_API 
+#ifdef SLD_STRINGS_STATIC
+#   define SLD_STRINGS_API
 #elif defined(SLD_STRINGS_DLL_EXPORT)
 #   define SLD_STRINGS_API __declspec(dllexport)
 #else

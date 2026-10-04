@@ -1,5 +1,7 @@
 #pragma once
 
+#define SLD_STRINGS_DLL_EXPORT
+
 #include "sld-strings.hpp"
 #include "cstr-nvar.cpp"
 #include "cstr-c8.cpp"

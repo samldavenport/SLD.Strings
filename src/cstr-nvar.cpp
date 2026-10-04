@@ -122,7 +122,7 @@ namespace sld {
         if (len_a != len_b) return(false);
 
         const u32 hash_a = hash_u32((void*)str_a, len_a);
-        const u32 hash_b = hash_u32((void*)str_a, len_b);
+        const u32 hash_b = hash_u32((void*)str_b, len_b);
         return(hash_a == hash_b); 
     }
 
